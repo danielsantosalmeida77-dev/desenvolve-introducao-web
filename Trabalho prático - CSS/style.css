@@ -1,0 +1,129 @@
+
+:root {
+    --cor-principal: #2c3e50;   
+    --cor-secundaria: #ecf0f1;   
+    --cor-destaque: #3498db;     
+    --cor-texto: #333;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--cor-texto);
+    margin: 0;
+    padding-top: 30px;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Georgia', serif;
+    color: var(--cor-principal);
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--cor-principal);
+}
+
+#navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: 300ms;
+}
+
+#navbar ul li a:hover {
+    color: var(--cor-destaque);
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.item-container {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-left: 4px solid var(--cor-destaque);
+}
+
+#apresentacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#bio {
+    text-align: justify;
+}
+
+#contato {
+    text-align: justify;
+}
+
+.img img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border: 3px solid var(--cor-destaque);
+    margin: 15px 0;
+}
+
+footer {
+    background-color: #222; 
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.footer-links ul{
+    list-style: none;
+    padding: 0;
+}
+
+footer a {
+    color: var(--cor-destaque);
+    text-decoration: none;
+
+}
+
+@media screen and (max-width: 768px) {
+   
+    body{
+        padding: 0;
+    }
+
+    #navbar ul {
+        flex-direction: row;
+    }
+
+    #navbar {
+        position: relative; 
+
+    }
+    
+    #navbar ul {
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+}
